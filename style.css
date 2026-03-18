@@ -1,45 +1,60 @@
-/* //////////////////////////////////////// */
-/* // TYPOGRAPHIE ////////////////////////7 */
+@import url(reset.css);
+
+/*  TYPOGRAPHIE////////// */
 
 
-/* font family.                             */
+/* Font Fammily---------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 body{
-	background: #c9366c;
-	font-family: "Schibsted Grotesk", sans-serif;
+ font-family: "Public Sans", sans-serif;
 }
 
-/* Font size                                  */
+
+
+/* Font size - - - - - - - -  */
 
 :root{
-	--size-XXL: 64px;
-	--size-XL: 32px;
-	--size-L: 20px;
-	--size-M: 16px;
-	--size-S: 13px;
+ --size-XXL: 64px;
+ --size-XL: 32px;
+ --size-L: 20px;
+ --size-M: 16px;
+ --size-S: 13px;
+
 }
 
-p { font-size: var(--size-M); }
-h1 { font-size: var(--size-XXL); }
+p { font-size: var(--size-M);}
+h1{font-size: var(--size-XXL);}
 
-/*  Font weight.                             */
+/* Font Weight */
 
-:root {
-	--weight-light: 275;
-	--weight-regular: 382;
-	--weight-bold: 599;
+:root{
+ --weight-light: 275;
+ --weight-regular: 382;
+ --weight-bold: 599;
 }
 
-h1 { font-weight: var(--weight-light); }
+body, p{ font-weight: var(--weight-regular);}
+b, strong, h6, h5, h4, h3, h2 {font-weight: var(--weight-bold);}
 
-/* //////////////////////////////////////// */
-/* // COULEUR ////////////////////////7 */
+h1{ font-weight: var(--weight-light);}
 
-:root {
-	--Couleur-Principale: #FF8800;
+
+
+/* COULEUR ////////////////////////*/
+
+:root{
+ --Couleur-Principale: #bec427;
 }
 
-h1 { color: var(--Couleur-Principale);}
+h1{color: var(--Couleur-Principale);}
+
+
+/* MISE EN PAGE ////////////////////////*/
+
+
+section{ min-height: 100vh;}
+
+.vignette { max-width: 256px;}
