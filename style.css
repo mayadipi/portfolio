@@ -46,15 +46,68 @@ h1{ font-weight: var(--weight-light);}
 /* COULEUR ////////////////////////*/
 
 :root{
- --Couleur-Principale: #bec427;
+ --Couleur-Principale: #3d2760;
 }
 
 h1{color: var(--Couleur-Principale);}
+a{color: var(--Couleur-Principale);}
 
+/* DECO ////////////////////////*/
+
+a{
+	text-decoration: none;
+
+	text-decoration: underline;
+	text-underline-offset: 0.3em;
+	text-decoration-thickness: 1px;
+	text-decoration-style: dotted;
+}
 
 /* MISE EN PAGE ////////////////////////*/
 
+:root { --spacer: 1rem; }
+
+.row { display: flex; gap: var(--spacer); }
+.row > * { flex: 1; }
+
+body {padding: var(--spacer); }
 
 section{ min-height: 100vh;}
 
-.vignette { max-width: 256px;}
+section {
+	min-height: 100vh; 
+	margin-top: calc( var(--spacer)* 3 ) ; }
+
+section {display: flex;
+		gap: var(--spacer) ;
+		flex-wrap: wrap;
+		justify-content: center;
+}
+
+section > h2 { flex: 0 0 100%; }
+section > a { flex: 0 1 256px; }
+
+section .vignette {
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+/* .vignette { max-width: 256px;} */
+
+html, body {
+	scroll-behavior: smooth;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	background: #52ff4f;
+	padding: 0.5rem 0;
+}
+h2 {
+	position: sticky;
+	top: 3rem;
+	background: #ff00a6;
+	padding: 0.5rem 0;
+}

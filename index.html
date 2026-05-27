@@ -10,46 +10,68 @@
 </head>
 <body>
  <header>
-  <h1>Di Pietro Maya</h1>
-  <nav>
-   <a href="#Graphisme">Graphisme</a>
-   <a href="#Photographie">Photo</a>
-   <a href="#Illustration">Illustration</a>
-  </nav>
+    
+
+    <div class="row"  id="Into">
+ 
+        <div class="col">
+            <h1>Di Pietro Maya</h1>
+            </div>
+            <div class="col">
+            <p>Ecco qui un po del mio mondo
+                
+            </p>
+        </div>
+    </div>
+
+
+
  </header>
+
+     <nav>
+        <a href="#Graphisme">Graphisme</a>
+        <a href="#Photographie">Photo</a>
+        <a href="#Illustration">Illustration</a>
+    </nav>
 
  <section id="Graphisme">
   <h2>Graphisme</h2>
 
-  <a href="chaton_big1.jpg" data-lightbox="graphisme">
-   <img class="vignette" src="chaton_web1.jpg" alt=""> 
-  </a>
-
-  <a href="chaton_big2.jpg" data-lightbox="graphisme">
-   <img class="vignette" src="chaton_web2.jpg" alt="">
-  </a>
-
+  <a href="image/chaton_big1.jpg"   data-lightbox="graphisme"> <img class="vignette" src="image/chaton_web1.jpg" alt=""> </a>
+  <a href="image/chaton_big2.jpg"   data-lightbox="graphisme"> <img class="vignette" src="image/chaton_web2.jpg" alt=""> </a>
+  <a href="image/chaton_big3.jpg"   data-lightbox="graphisme"> <img class="vignette" src="image/chaton_web3.jpg" alt=""> </a>
  </section>
 
  <section id="Photographie">
   <h2>Photographie</h2>
 
- <a href="image/grigorii-shcheglov-1kN3iOMaE7E-unsplash_big.jpg" data-lightbox="photographie">
-   <img class="vignette" src="image/grigorii-shcheglov-1kN3iOMaE7E-unsplash_web.jpg">
-  </a>
+   <a href="image/chaton_big4.jpg"   data-lightbox="Photographie"> <img class="vignette" src="image/chaton_web4.jpg" alt=""> </a>
 
  </section>
 
  <section id="Illustration">
   <h2>Illustration</h2>
 
-  <a href="image/tanya-barrow-v3HvlxY3uOE-unsplash_big.jpg" data-lightbox="photographie">
-   <img class="vignette" src="image/tanya-barrow-v3HvlxY3uOE-unsplash_web.jpg">
-  </a>
 
  </section>
  
 
  <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+ <script>
+    lightbox.option({
+      'resizeDuration': 50,
+      'fadeDuration': 50,
+      'imageFadeDuration': 0,
+      'wrapAround': true,
+      'showImageNumberLabel': false,
+    })
+</script>
+<style>
+    :root{
+        --lb-image-border-width: 1px;
+        --lb-border-radius: 0;
+    }
+</style>
+
 </body>
 </html>
